@@ -1,4 +1,4 @@
-package com.xbp.start.config;
+package org.xbp.springbootstarter.config;
 
 import org.springframework.util.StringUtils;
 

@@ -1,4 +1,4 @@
-package com.xbp.start.config;
+package org.xbp.springbootstarter.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
@@ -17,7 +17,7 @@ public class StarterAutoConfigure {
 
     @Bean
     @ConditionalOnMissingBean
-    @ConditionalOnProperty(prefix = "xbp.start", value = "enabled", havingValue = "true")
+    @ConditionalOnProperty(prefix = "xbp.springbootstarter", value = "enabled", havingValue = "true")
     StarterService starterService() {
         return new StarterService(properties.getUserStr());
     }

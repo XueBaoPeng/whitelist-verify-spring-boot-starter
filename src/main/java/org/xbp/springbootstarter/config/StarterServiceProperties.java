@@ -1,8 +1,8 @@
-package com.xbp.start.config;
+package org.xbp.springbootstarter.config;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
-@ConfigurationProperties("xbp.start")
+@ConfigurationProperties("xbp.springbootstarter")
 public class StarterServiceProperties {
 
     private String userStr;

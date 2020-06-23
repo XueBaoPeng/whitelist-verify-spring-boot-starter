@@ -1,8 +1,8 @@
-package com.xbp.start;
+package org.xbp.springbootstarter;
 
 import com.alibaba.fastjson.JSON;
-import com.xbp.start.annotation.WhiteList;
-import com.xbp.start.config.StarterService;
+import org.xbp.springbootstarter.annotation.WhiteList;
+import org.xbp.springbootstarter.config.StarterService;
 import org.apache.commons.beanutils.BeanUtils;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
@@ -25,7 +25,7 @@ public class DoJoinPoint {
     @Autowired
     private StarterService starterService;
 
-    @Pointcut("@annotation(com.xbp.start.annotation.WhiteList)")
+    @Pointcut("@annotation(org.xbp.springbootstarter.annotation.WhiteList)")
     public void aopPoint() {
     }
 
